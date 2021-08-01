@@ -24,12 +24,6 @@ h1{
   margin-bottom: 20px;
 }
 
-h3{
-  color: $Light-Grayish-Magenta;
-  font-family: $font;
-  font-weight: 700;
-}
-
 p{
   color: $Dark-Grayish-Magenta;
   font-family: $font;
@@ -167,4 +161,90 @@ img{
   a{
     color: hsl(228, 45%, 44%);
   }
+}
+
+/*=============================================================
+                             Media
+  =============================================================*/
+
+@media only screen and(max-width:1024px){
+
+/*============
+    General
+  ============*/
+
+html,body{
+  min-height: 100vh;
+  background-color: $White;
+  padding: 20px 20px 5px 20px;
+}
+
+h1{
+  font-size: 2rem;
+}
+
+p{
+  font-size: 0.75rem;
+}
+
+/*=================
+    Main Container
+  =================*/
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*==================
+    Header Container
+  ==================*/
+
+.header-container{
+  width: 100%;
+}
+
+/*===================
+    Rating Containers
+  ===================*/
+
+.rating-container{
+  margin-bottom: 20px;
+  padding: 15px 0;
+  display: block;
+  p{
+    padding-left: 0px;   
+  }
+}
+
+.rating-1-container{
+  border-radius: 10px;
+}
+
+.rating-2-container{
+  transform: translate(0%);
+}
+
+.rating-3-container{
+  transform: translate(0%);
+}
+
+/*=====================
+    Secondary Container
+  =====================*/
+
+  .secondary-container{
+    flex-direction: column;
+  }
+
+  /*=====================
+    Cards Container
+  =====================*/
+
+  .cards{
+    width: 100%;
+  } 
+
 }

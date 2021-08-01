@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600&display=swap");
+/*============
+    General
+  ============*/
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -9,7 +12,7 @@
 html, body {
   min-height: 100vh;
   background-color: white;
-  padding: 80px;
+  padding: 20px 60px 5px 60px;
 }
 
 h1 {
@@ -20,38 +23,56 @@ h1 {
   margin-bottom: 20px;
 }
 
+h3 {
+  color: #f7f2f7;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+}
+
 p {
   color: #937b92;
   font-family: "Spartan", sans-serif;
   font-weight: 600;
   line-height: 1.5;
+  font-size: 0.9rem;
 }
 
-img {
-  margin-right: 10px;
-  height: 3vh;
-  -webkit-transform: scale(0.75) translateY(-5%);
-          transform: scale(0.75) translateY(-5%);
-}
-
-.container {
+/*=================
+    Main Container
+  =================*/
+.main-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 80px;
 }
 
+/*==================
+    Header Container
+  ==================*/
 .header-container {
-  width: 45%;
-  margin-right: 40px;
+  width: 40%;
+  margin-right: 120px;
+}
+
+/*===================
+    Rating Containers
+  ===================*/
+img {
+  margin-right: 7px;
+  height: 3vh;
+  -webkit-transform: scale(0.75);
+          transform: scale(0.75);
 }
 
 .rating-container {
   margin-bottom: 20px;
+  padding: 15px 30px;
 }
 
 .rating-container p {
   padding-left: 30px;
+  color: #502050;
 }
 
 .rating-1-container {
@@ -59,7 +80,6 @@ img {
   display: -ms-flexbox;
   display: flex;
   background-color: #f7f2f7;
-  padding: 15px;
   border-radius: 10px;
 }
 
@@ -68,7 +88,6 @@ img {
   display: -ms-flexbox;
   display: flex;
   background-color: #f7f2f7;
-  padding: 15px;
   border-radius: 10px;
   -webkit-transform: translate(10%);
           transform: translate(10%);
@@ -79,15 +98,88 @@ img {
   display: -ms-flexbox;
   display: flex;
   background-color: #f7f2f7;
-  padding: 15px;
   border-radius: 10px;
   -webkit-transform: translate(20%);
           transform: translate(20%);
 }
 
+/*=====================
+    Secondary Container
+  =====================*/
+.secondary-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.secondary-container p {
+  color: #f7f2f7;
+  margin-top: 7px;
+  font-size: 0.75rem;
+}
+
+.secondary-container p span {
+  display: block;
+  color: #ee68a4;
+}
+
+/*=====================
+    Cards Container
+  =====================*/
+.cards {
+  padding: 30px;
+  margin-right: 25px;
+  width: 33%;
+}
+
+.cards p {
+  line-height: 1.75;
+}
+
+.card-1 {
+  background-color: #502050;
+  border-radius: 10px;
+}
+
+.card-2 {
+  background-color: #502050;
+  border-radius: 10px;
+  -webkit-transform: translateY(10%);
+          transform: translateY(10%);
+}
+
+.card-3 {
+  background-color: #502050;
+  border-radius: 10px;
+  -webkit-transform: translateY(20%);
+          transform: translateY(20%);
+}
+
+.img-header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.img-header-container p {
+  -webkit-transform: translateY(-10%);
+          transform: translateY(-10%);
+}
+
+.img-header-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+/*===============
+    Attribution
+  ===============*/
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 70px;
 }
 
 .attribution a {

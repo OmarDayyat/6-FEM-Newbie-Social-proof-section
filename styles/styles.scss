@@ -1,5 +1,9 @@
 @import 'variables';
 
+/*============
+    General
+  ============*/
+
 *{
   box-sizing: border-box;
   padding: 0;
@@ -9,7 +13,7 @@
 html,body{
   min-height: 100vh;
   background-color: $White;
-  padding: 80px;
+  padding: 20px 60px 5px 60px;
 }
 
 h1{
@@ -20,47 +24,66 @@ h1{
   margin-bottom: 20px;
 }
 
+h3{
+  color: $Light-Grayish-Magenta;
+  font-family: $font;
+  font-weight: 700;
+}
+
 p{
   color: $Dark-Grayish-Magenta;
   font-family: $font;
   font-weight: 600;
   line-height: 1.5;
+  font-size: 0.9rem;
 }
 
-img{
-  margin-right: 10px;
-  height: 3vh;
-  transform: scale(0.75) translateY(-5%);
-}
+/*=================
+    Main Container
+  =================*/
 
-.container{
+.main-container{
   display: flex;
   margin-bottom: 80px;
 }
 
+/*==================
+    Header Container
+  ==================*/
+
 .header-container{
-  width: 45%;
-  margin-right: 40px;
+  width: 40%;
+  margin-right: 120px;
 }
+
+/*===================
+    Rating Containers
+  ===================*/
+
+img{
+    margin-right: 7px;
+    height: 3vh;
+    transform: scale(0.75);
+  }
 
 .rating-container{
   margin-bottom: 20px;
+  padding: 15px 30px;
   p{
     padding-left: 30px;
+    color: $Very-Dark-Magenta;
   }
 }
 
 .rating-1-container{
   display: flex;
   background-color: $Light-Grayish-Magenta;
-  padding: 15px;
   border-radius: 10px;
 }
 
 .rating-2-container{
   display: flex;
   background-color: $Light-Grayish-Magenta;
-  padding: 15px;
   border-radius: 10px;
   transform: translate(10%);
 }
@@ -68,14 +91,79 @@ img{
 .rating-3-container{
   display: flex;
   background-color: $Light-Grayish-Magenta;
-  padding: 15px;
   border-radius: 10px;
   transform: translate(20%);
 }
 
+/*=====================
+    Secondary Container
+  =====================*/
+
+  .secondary-container{
+    display: flex;
+    p{
+      color: $Light-Grayish-Magenta;
+      margin-top: 7px;
+      font-size: 0.75rem;
+      span{
+        display: block;
+        color: $Soft-Pink;
+      }
+    }
+  }
+
+  /*=====================
+    Cards Container
+  =====================*/
+
+  .cards{
+    padding: 30px;
+    margin-right: 25px;
+    width: 33%;
+    p{
+      line-height: 1.75;
+    }
+  }
+
+  .card-1{
+    background-color: $Very-Dark-Magenta;
+    border-radius: 10px;
+  }
+
+  .card-2{
+    background-color: $Very-Dark-Magenta;
+    border-radius: 10px;
+    transform: translateY(10%);
+  }
+
+  .card-3{
+    background-color: $Very-Dark-Magenta;
+    border-radius: 10px;
+    transform: translateY(20%);
+  }
+
+  .img-header-container{
+    display: flex;
+    p{
+      transform: translateY(-10%);
+    }
+    img{
+      width: 50px;
+      height: 50px;
+      border-radius: 50px;
+      margin-right: 10px;
+    }
+  }
+
+/*===============
+    Attribution
+  ===============*/
+
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin-top: 70px;
+ 
   a{
     color: hsl(228, 45%, 44%);
   }

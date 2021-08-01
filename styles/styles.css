@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;600&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  min-height: 100vh;
+  background-color: white;
+  padding: 80px;
+}
+
+h1 {
+  color: #502050;
+  font-family: "Spartan", sans-serif;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+p {
+  color: #937b92;
+  font-family: "Spartan", sans-serif;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+img {
+  margin-right: 10px;
+  height: 3vh;
+  -webkit-transform: scale(0.75) translateY(-5%);
+          transform: scale(0.75) translateY(-5%);
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.header-container {
+  width: 45%;
+  margin-right: 40px;
+}
+
+.rating-container {
+  margin-bottom: 20px;
+}
+
+.rating-container p {
+  padding-left: 30px;
+}
+
+.rating-1-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f7f2f7;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.rating-2-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f7f2f7;
+  padding: 15px;
+  border-radius: 10px;
+  -webkit-transform: translate(10%);
+          transform: translate(10%);
+}
+
+.rating-3-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #f7f2f7;
+  padding: 15px;
+  border-radius: 10px;
+  -webkit-transform: translate(20%);
+          transform: translate(20%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #3e52a3;
+}
+/*# sourceMappingURL=styles.css.map */
